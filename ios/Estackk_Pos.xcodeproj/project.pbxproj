@@ -22,6 +22,8 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* boilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* boilerplateTests.m */; };
+		2E272CEB25AF34DF00F8479B /* antoutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E272CE925AF34DF00F8479B /* antoutline.ttf */; };
+		2E272CEC25AF34DF00F8479B /* antfill.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E272CEA25AF34DF00F8479B /* antfill.ttf */; };
 		7898953189134CFF5364A91D /* libPods-Estackk_Pos-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B049949CB3278CD9E669BE2 /* libPods-Estackk_Pos-tvOSTests.a */; };
 		E21D815C9B223362B3A2E5B3 /* libPods-Estackk_Pos-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1061284044592FC01CC46CC /* libPods-Estackk_Pos-tvOS.a */; };
 		F70875F64D324CF6864F5DB2 /* libPods-Estackk_PosTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7734F8813EAF6563D10F7D4C /* libPods-Estackk_PosTests.a */; };
@@ -77,6 +79,8 @@
 		2565F98E13DD4C6596D4197E /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* Estackk_Pos-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Estackk_Pos-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* Estackk_Pos-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Estackk_Pos-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E272CE925AF34DF00F8479B /* antoutline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = antoutline.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; };
+		2E272CEA25AF34DF00F8479B /* antfill.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = antfill.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antfill.ttf"; sourceTree = "<group>"; };
 		2EACB7A583C64267AB4D40EA /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		466CDEFA3899A15759D8AB01 /* libPods-Estackk_Pos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Estackk_Pos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1C4A36F5C946CF9B06EFFC /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
@@ -230,6 +234,8 @@
 				044C65D8243C61E200C486A6 /* estackk POS.entitlements */,
 				04E5347323F5771000F43C9D /* MyriadPro-Bold.ttf */,
 				04E5347023F5771000F43C9D /* MyriadPro-Semibold.ttf */,
+				2E272CEA25AF34DF00F8479B /* antfill.ttf */,
+				2E272CE925AF34DF00F8479B /* antoutline.ttf */,
 				04E5347223F5771000F43C9D /* Roboto-Bold.ttf */,
 				04E5347123F5771000F43C9D /* Roboto-Medium.ttf */,
 				04E5347423F5771000F43C9D /* Roboto-Regular.ttf */,
@@ -377,7 +383,8 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = VZVA6WJLV9;
+						DevelopmentTeam = 3V8R4UXFK4;
+						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -431,6 +438,8 @@
 				04E5347723F5771000F43C9D /* Roboto-Bold.ttf in Resources */,
 				04E5347823F5771000F43C9D /* MyriadPro-Bold.ttf in Resources */,
 				04E5347923F5771000F43C9D /* Roboto-Regular.ttf in Resources */,
+				2E272CEB25AF34DF00F8479B /* antoutline.ttf in Resources */,
+				2E272CEC25AF34DF00F8479B /* antfill.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -780,9 +789,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "estackk POS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = VZVA6WJLV9;
+				DEVELOPMENT_TEAM = 3V8R4UXFK4;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				INFOPLIST_FILE = boilerplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.19;
@@ -793,6 +805,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.opengeekslab.estackk;
 				PRODUCT_NAME = "estackk POS";
+				PROVISIONING_PROFILE_SPECIFIER = LoreneAdhoc;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -803,8 +816,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "estackk POS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = VZVA6WJLV9;
+				DEVELOPMENT_TEAM = 3V8R4UXFK4;
 				INFOPLIST_FILE = boilerplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.19;
@@ -815,6 +830,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.opengeekslab.estackk;
 				PRODUCT_NAME = "estackk POS";
+				PROVISIONING_PROFILE_SPECIFIER = LoreneAdhoc;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

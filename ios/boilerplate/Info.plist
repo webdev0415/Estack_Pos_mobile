@@ -82,6 +82,8 @@
 	<string>YOUR TEXT</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>antoutline.ttf</string>
+		<string>antfill.ttf</string>
 		<string>Roboto-Regular.ttf</string>
 		<string>Roboto-Medium.ttf</string>
 		<string>MyriadPro-Semibold.ttf</string>
