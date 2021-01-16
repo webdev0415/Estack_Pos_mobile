@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
+import { View, Text } from "react-native";
 import GrandPoints from "./GrandPoints";
 import validator from "../../../../validators/points-validator";
 import * as actions from "../../../../redux/actions";
-import { Toast, Provider } from "@ant-design/react-native";
+import { Toast, Provider, Modal } from "@ant-design/react-native";
 
 class GrandPointsScreen extends Component {
   state = {
     isGranded: false,
     purchase: "",
-    user: null
+    user: null,
+    visible: false
   };
 
   componentDidMount() {
@@ -37,9 +38,11 @@ class GrandPointsScreen extends Component {
 
   //grand = () => this.setState({ isGranded: true })
   grand = () => {
-    this.setState({ isGranded: true });
+    this.setState({ isGranded: true, visible: true });
 
-    Toast.info("Points Granted Successfully.", 1, undefined, false);
+    //Toast.info("Points Granted Successfully.", 1, undefined, false);
+
+    setTimeout(() => this.setState({ visible: false }), 1500);
   };
 
   grandPoints = () =>
@@ -74,7 +77,9 @@ class GrandPointsScreen extends Component {
     const { purchase, isGranded, user } = this.state;
     const { customer, business } = this.props;
     const isDisabled = purchase.length === 0 || isGranded;
-
+    const footerButtons = [
+      { text: "Ok", onPress: () => this.setState({ visible: false }) }
+    ];
     if (!user || !customer) {
       return null;
     }
@@ -91,6 +96,19 @@ class GrandPointsScreen extends Component {
           isDisabled={isDisabled}
           onChangePurchase={this.onChangePurchase}
         />
+        <Modal
+          title=""
+          transparent
+          maskClosable
+          visible={this.state.visible}
+          footer={footerButtons}
+        >
+          <View style={{ paddingVertical: 10 }}>
+            <Text style={{ textAlign: "center" }}>
+              Points Granted Successfully
+            </Text>
+          </View>
+        </Modal>
       </Provider>
     );
   }
