@@ -42,7 +42,13 @@ class GrandPointsScreen extends Component {
 
     //Toast.info("Points Granted Successfully.", 1, undefined, false);
 
-    setTimeout(() => this.setState({ visible: false }), 1500);
+    setTimeout(
+      () =>
+        this.setState({ visible: false }, () => {
+          this.goBack();
+        }),
+      1500
+    );
   };
 
   grandPoints = () =>
